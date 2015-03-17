@@ -11,8 +11,8 @@
     <link rel="icon" href="<?php echo SITE_ROOT ?>/webroot//favicon.ico" type="image/x-icon">
 
     <!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
 
     <?php require 'views/elements/stylesheets.php' ?>
     
@@ -66,55 +66,35 @@
         </header>
         <!-- header close -->
 
-        <!-- revolution slider begin -->
-
-        <?php require 'views/elements/slider.php' ?>
-        
-        <!-- revolution slider close -->
+        <!-- subheader -->
+        <section id="subheader" data-speed="8" data-type="background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1> <?php echo $title ?> </h1>
+                        <!-- <span>Control Management System</span> -->
+                        <?php echo $breadcrumbs ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- subheader close -->
 
         <?php echo $content ?>
 
     </div>
     <!-- wrapper end -->
 
+
+
     <!-- LOAD JAVASCRIPT FILES -->
     <?php require 'views/elements/javascripts.php' ?>
     
-    <script src="<?php echo SITE_ROOT ?>/webroot/js/custom.js"></script>
+    <script src="<?php echo SITE_ROOT ?>/webroot/js/custom-simple.js"></script>
 
     <!-- SLIDER REVOLUTION SCRIPTS  -->
     <script type="text/javascript" src="<?php echo SITE_ROOT ?>/webroot/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="<?php echo SITE_ROOT ?>/webroot/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-    <script type="text/javascript">
-
-        $(function() {
-            $('#outstaffing-link').click(function(){
-                $("html, body").animate({scrollTop: $('#section-about-us-2').offset().top }, 500, 'easeOutCirc');
-            });
-
-            $('#read-more-expertise').click(function(){
-                $("html, body").animate({scrollTop: $('#section-about-us-2').offset().top }, 500, 'easeOutCirc');
-            });
-
-            $('#slider-btn').click(function(){
-                $("html, body").animate({scrollTop: $('#section-about-us-2').offset().top }, 500, 'easeOutCirc');
-            });
-
-            $('#read-more-services').click(function(){
-                $("html, body").animate({scrollTop: $('#section-services').offset().top }, 500, 'easeOutCirc');
-            });
-
-            $('#read-more-work').click(function(){
-                $("html, body").animate({scrollTop: $('#section-portfolio').offset().top }, 500, 'easeOutCirc');
-            });
-
-            $('#read-more-clients').click(function(){
-                $("html, body").animate({scrollTop: $('#section-testimonial').offset().top }, 500, 'easeOutCirc');
-            });
-        });
-
-    </script>
 
 </body>
 </html>
