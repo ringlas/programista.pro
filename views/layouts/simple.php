@@ -44,7 +44,7 @@
 
                         <!-- logo begin -->
                         <h1 id="logo">
-                            <a href="#">
+                            <a href="/">
 
                                 <?php echo $this->html->img('logo.png', array('class' => 'logo-1')) ?>
 

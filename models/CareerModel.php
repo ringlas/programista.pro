@@ -173,7 +173,7 @@ class CareerModel {
 				'qualifications' => array(
 					'Software Engineering Skills:', 				
 					array(
-						'C/C++ or PHP (preferably);',
+						'PHP (preferably) or C/C++;',
 						'Good understanding of OOP programming;',
 						'Good understanding of MySQL specifics and data processing;',
 						'Secure software development skills is a plus.',
