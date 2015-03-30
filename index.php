@@ -7,10 +7,12 @@ require_once 'config/configuration.php';
 // load models
 require_once 'models/Model.php';
 require_once 'models/ProjectModel.php';
+require_once 'models/CareerModel.php';
 
 // load controllers
 require_once 'controllers/Controller.php';
 require_once 'controllers/PagesController.php';
+require_once 'controllers/CareersController.php';
 require_once 'controllers/EmailController.php';
 
 // load helpers
@@ -27,11 +29,12 @@ $urlArray = callHook();
 new Controller($uri);
 
 $pages = new PagesController();
+$careers = new CareersController();
 $mail  = new EmailController();
 
 if ($urlArray['controller'] == 'pages' && $urlArray['action'] == 'projects') {
 
-	$pages->projects_action($urlArray['queryString'][0]);	
+    $pages->projects_action($urlArray['queryString'][0]);	
 										
 } elseif($urlArray['controller'] == 'pages' && $urlArray['action'] == '404') {
 
@@ -40,6 +43,14 @@ if ($urlArray['controller'] == 'pages' && $urlArray['action'] == 'projects') {
 } elseif($urlArray['controller'] == 'email' && $urlArray['action'] == 'send') {
 
     $mail->send_action();
+
+} elseif($urlArray['controller'] == 'careers' && ($urlArray['action'] == 'list' || is_null($urlArray['action']))) {
+
+    $careers->list_action();
+
+} elseif($urlArray['controller'] == 'careers' && $urlArray['action'] == 'view') {
+    
+    $careers->view_action($urlArray['queryString'][0]);    
 
 } else {
 	

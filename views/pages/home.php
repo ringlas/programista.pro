@@ -461,6 +461,35 @@
     </section>
     <!-- section close -->
 
+    <!-- team section begin -->
+    <section id="section-careers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h1 class="animated" data-animation="fadeInUp">Careers 
+                        <span class="small-border animated" data-animation="fadeInUp"></span>
+                    </h1>
+                    <p class="lead animated" data-animation="fadeInUp">
+                        If you want to work for an incredible company that inspires innovation and creativity every day, contact us.
+                    </p>
+                    <div class="spacer-single"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    
+                    <a href="/careers" class="btn btn-primary">See Available Job Opportunities</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section close -->
+
     <!-- section begin -->
     <section id="logo-full">
         <div class="container">
