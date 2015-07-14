@@ -424,7 +424,26 @@
                 <div class="col-md-4 item">
                     <div class="de_testi">
                         <blockquote>
-                            <p>I would highly recommend Programista If you have been considering outstaffing - they are
+                            <p> Programista; are exceptional at finding and retaining highly talented 
+                                individuals that I consider trusted partners and part of the team. 
+                                They have helped us scale the team in ways that would not have been possible without them. 
+                            </p>
+                        </blockquote>
+                        <div class="de_testi_by">
+                            <div class="de_testi_pic">
+                                <?php echo $this->html->img('testimonial/testi_jack_dempsy.jpg', array('class' => 'img-circle')) ?>
+                            </div>
+                            <div class="de_testi_company">
+                                <strong>Jack Dempsey</strong>, VP Product Engineering of SevOne
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 item">
+                    <div class="de_testi">
+                        <blockquote>
+                            <p>I would highly recommend Programista; If you have been considering outstaffing - they are
                                 fast, efficient and capable of anything.</p>
                         </blockquote>
                         <div class="de_testi_by">
