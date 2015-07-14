@@ -14,12 +14,12 @@ class CareerModel {
 	{
 
 		$careers = array(
-			array(
-				'id' => '1', 
-				'department' => 'Development',
-				'position' => 'API Platform Engineer',
-				'location' => 'Sofia',
-			),
+			// array(
+			// 	'id' => '1', 
+			// 	'department' => 'Development',
+			// 	'position' => 'API Platform Engineer',
+			// 	'location' => 'Sofia',
+			// ),
 			// array(
 			// 	'id' => '2', 
 			// 	'department' => 'QA',
@@ -44,12 +44,12 @@ class CareerModel {
 				'position' => 'Platform Engineer',
 				'location' => 'Plovdiv',
 			),
-			array(
-				'id' => '5', 
-				'department' => 'QA',
-				'position' => 'Platform QA Engineer',
-				'location' => 'Plovdiv',
-			),
+			// array(
+			// 	'id' => '5', 
+			// 	'department' => 'QA',
+			// 	'position' => 'Platform QA Engineer',
+			// 	'location' => 'Plovdiv',
+			// ),
 		);
 	
 		return $careers;
