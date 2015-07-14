@@ -12,4 +12,14 @@ class HtmlHelper {
 		return $imgTag;
 
 	}
+
+	// generate image path with options
+
+	public function imgPath($img, $options = null) {
+
+		$imgPath = SITE_ROOT . '/webroot/images/' . $img;
+
+		return $imgPath;
+
+	}
 }
